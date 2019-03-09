@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Get the Latitude and Longitude of a Point</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+</head>
+<body>
+    <h1>Get the Latitude and Longitude of a Point on a Map</h1>
+    <p>Just click (or tap) the point on the map you want to know the latitude and longitude of.</p>
+    <p class="location-values">Latitude: <span id="latNumber">0</span>, Longitude: <span id="lngNumber">0</span> <button id="copyToClipboard">Copy</button></p>
+    <p><input id="citySearch" type="search" list="cityList" placeholder="Jump to a city..." /></p>
+    <datalist id="cityList"></datalist>
+    <div id="map"></div>
+    <p>Created by Alice MacKel, check out the code on GitHub</p>
+    <textarea id="clipboardHolder">0,0</textarea>
+    <script src="index.js"></script>
+</body>
+</html>
